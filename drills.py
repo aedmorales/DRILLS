@@ -8,3 +8,6 @@ df.insert(2, "Dummy", [r.randint(0,1) for _ in range(len(df.index))])
 print(df)
 
 df.to_csv("table2.csv")  
+
+df2 = df.transpose()
+df2.to_csv("table3.csv")
